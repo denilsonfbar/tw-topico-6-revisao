@@ -1,0 +1,52 @@
+/* Importando a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Estilos de base e reset */
+* {
+  border: 1px solid red; /* Apenas para visualização de layout */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #111827; /* Um azul quase preto */
+  color: #E5E7EB; /* Um cinza bem claro */
+}
+
+a {
+  color: #38BDF8; /* Azul claro para links */
+  text-decoration: none;
+}
+
+/* Criando o Layout Principal com Flexbox */
+.site-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1F2937; /* Cinza-azulado escuro */
+  min-height: 100vh;
+  padding: 2rem;
+  /*flex-shrink: 0; */
+}
+
+.main-content {
+  flex-grow: 1; /* Faz esta div ocupar todo o espaço restante */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
+  padding: 2rem;
+}
+
+/* Estilizando o Menu (sidebar) */ 
+.sidebar-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
